@@ -4,7 +4,7 @@ Reproducible comparative genomics workflow for bacterial whole-genome sequencing
 
 ## Overview
 
-This project analyzed 34 *Campylobacter jejuni* isolates using complementary read-based and assembly-based comparative genomics workflows to evaluate genetic relatedness across isolates.
+This project analyzed 34 Campylobacter jejuni isolates to identify genomic variation and genetically related clusters. Complementary read-based and assembly-based workflows were used to compare whether different genomic analysis strategies recovered similar patterns of relatedness.
 
 Two analytical approaches were implemented:
 
@@ -18,24 +18,23 @@ FASTQ reads → fastp quality control → SKESA genome assembly → ParSNP core-
 
 A Nextflow DSL2 implementation was also developed for the assembly-based fastp → SKESA → ParSNP workflow.
 
+## Key Findings
+
+- Identified closely related multi-isolate genomic clusters and genetically distinct sporadic isolates using phylogenetic distance and hierarchical clustering.
+- Evaluated both an external NCBI reference genome and a high-quality dataset-derived isolate to assess reference-dependent effects.
+- Developed a Nextflow DSL2 implementation of the assembly-based workflow to improve reproducibility across multiple samples.
+
 ## Dataset
 
 - 34 *Campylobacter jejuni* isolates
-- 68 paired-end FASTQ files
+- 34 paired-end read sets (68 FASTQ files)
 - 34 draft genome assemblies
-- Two reference strategies evaluated:
-  - NCBI reference genome GCF_000009085.1
-  - High-quality dataset isolate E1376901
 
 Raw sequencing data are not included in this repository.
 
 ## Analysis
 
-Phylogenetic trees were converted into pairwise evolutionary-distance matrices in R and analyzed using hierarchical clustering.
-
-A project-defined genetic-distance threshold of 0.005 substitutions per site was used to distinguish closely related multi-isolate clusters from sporadic isolates.
-
-The read-based analysis used complete-linkage clustering, while the assembly-based analysis used average-linkage clustering.
+Pairwise evolutionary distances were calculated from the phylogenetic trees and used for hierarchical clustering. A project-defined cutoff of 0.005 substitutions per site was used to identify closely related multi-isolate clusters.
 
 ## Selected Results
 Note: The original project figures use “Outbreak” for clusters defined by the project’s genetic-distance threshold. These are interpreted here as outbreak-like genomic clusters, not epidemiologically confirmed outbreaks.
