@@ -38,16 +38,17 @@ A project-defined genetic-distance threshold of 0.005 substitutions per site was
 The read-based analysis used complete-linkage clustering, while the assembly-based analysis used average-linkage clustering.
 
 ## Selected Results
+Note: The original project figures use “Outbreak” for clusters defined by the project’s genetic-distance threshold. These are interpreted here as outbreak-like genomic clusters, not epidemiologically confirmed outbreaks.
 
 ### Read-based phylogeny using Snippy
 
-This figure shows the read-based phylogenetic analysis generated from core SNP alignment and hierarchical clustering.
+Read-based core SNP phylogeny showing closely related genomic clusters and sporadic isolates identified through hierarchical clustering.
 
 ![Snippy phylogeny](figures/snippy_phylogeny.png)
 
 ### Assembly-based phylogeny using ParSNP
 
-This figure shows the assembly-based phylogenetic analysis generated from core-genome alignment and hierarchical clustering.
+Assembly-based core-genome phylogeny showing genomic relatedness across the same isolate set using the complementary ParSNP workflow.
 
 ![ParSNP phylogeny](figures/parsnp_phylogeny.png)
 
