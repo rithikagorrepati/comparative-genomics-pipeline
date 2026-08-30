@@ -37,6 +37,20 @@ A project-defined genetic-distance threshold of 0.005 substitutions per site was
 
 The read-based analysis used complete-linkage clustering, while the assembly-based analysis used average-linkage clustering.
 
+## Selected Results
+
+### Read-based phylogeny using Snippy
+
+This figure shows the read-based phylogenetic analysis generated from core SNP alignment and hierarchical clustering.
+
+![Snippy phylogeny](figures/snippy_phylogeny.png)
+
+### Assembly-based phylogeny using ParSNP
+
+This figure shows the assembly-based phylogenetic analysis generated from core-genome alignment and hierarchical clustering.
+
+![ParSNP phylogeny](figures/parsnp_phylogeny.png)
+
 ## Tools
 
 **Bioinformatics:** fastp, Snippy, SKESA, ParSNP, IQ-TREE, FastTree
