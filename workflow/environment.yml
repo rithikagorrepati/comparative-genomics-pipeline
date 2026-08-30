@@ -1,0 +1,8 @@
+name: comparative-genomics
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - nextflow=24.10.5
