@@ -83,4 +83,5 @@ comparative-genomics-pipeline/
 │   ├── nextflow.config
 │   └── environment.yml
 └── README.md
+```
 
