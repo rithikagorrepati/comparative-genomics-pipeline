@@ -1,0 +1,53 @@
+# Python / R temporary files
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.Ruserdata
+
+# OS / editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Genome assemblies / reference files
+*.fasta
+*.fa
+*.fna
+
+# Alignment / variant outputs
+*.bam
+*.bai
+*.sam
+*.vcf
+*.vcf.gz
+*.tbi
+*.gff
+*.bed
+
+# Phylogenetic / intermediate outputs
+*.aln
+*.phy
+*.xmfa
+*.snps
+*.treefile
+*.log
+
+# Workflow outputs
+results/
+output/
+work/
+.nextflow/
+.nextflow.log*
+
+# Conda / environment folders
+.env
+.venv
+env/
+venv/
