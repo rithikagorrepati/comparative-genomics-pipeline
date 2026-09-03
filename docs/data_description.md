@@ -5,7 +5,7 @@ This project analyzed whole-genome sequencing data from 34 *Campylobacter jejuni
 ## Input data
 
 - 34 bacterial isolates
-- 68 paired-end FASTQ files
+- 34 paired-end read sets (68 FASTQ files)
 - 34 corresponding draft genome assemblies in FASTA format
 
 The FASTQ files contained raw sequencing reads used for the read-based workflow. The FASTA files contained assembled genomic contigs used for assembly-based comparative analysis.
